@@ -5,10 +5,7 @@ import statistics
 with open('channels_data.json', 'r', encoding='utf-8') as json_file:
     data = json.load(json_file)
 
-# Створюємо порожні список для збереження чисел
 numbers_list = []
-
-# Проходимося по елементам у файлі JSON і витягаємо числа
 for channel_info in data.values():
     number = channel_info[2]  # Вибираємо третій елемент (індекс 2) з кожного списку
     numbers_list.append(number)
