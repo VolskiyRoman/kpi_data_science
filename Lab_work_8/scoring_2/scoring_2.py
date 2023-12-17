@@ -129,7 +129,7 @@ if __name__ == '__main__':
     plt.show()
 
     scor_d_line = data["give"] = integro <= 0.0185  # емпірічна константа відсікання рішення
-    np.savetxt('Integro_Scor.txt', scor_d_line)  # файл інтегрованого показника - СКОРУ
+    np.savetxt('Integro_Scor.txt', scor_d_line)
     print('scor_d_line= ', scor_d_line)
     linear_discriminant_analysis(minimax_data)
     Fraud_detection(minimax_data)
